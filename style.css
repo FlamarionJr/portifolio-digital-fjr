@@ -1,0 +1,108 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+main {
+  max-width: 85vw;
+}
+
+
+.text h1 {
+  animation-name: entrar;
+  animation-duration: 2s;
+}
+
+.text p {
+  animation-name: entrar;
+  animation-duration: 3s;
+
+}
+.hero img {
+  animation-name: entrar2;
+  animation-duration: 2s;
+
+}
+
+.text button {
+  animation-name: aparecer;
+  animation-duration: 4.5s;
+
+  
+}
+
+.important {
+  animation: descida ease-in-out;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
+
+}
+
+.container h2{
+  animation: descida ease-in-out;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
+}
+
+.container .card{
+  animation: popup ease-in-out;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
+}
+
+.container .card1{
+  animation: entrar ease-in-out;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
+}
+
+@keyframes popup{
+  from{
+    scale: 0.1;
+    opacity: 0;
+  }
+  to{
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@keyframes descida{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes entrar {
+  from {transform: translateX(-950px); opacity: 0;}
+  to {transform: translateX(0); opacity: 1;}
+
+}
+@keyframes entrar2 {
+  from {transform: translateX(950px); opacity: 0;}
+  to {transform: translateX(0); opacity: 1;}
+}
+
+
+
+@keyframes aparecer {
+  0% {opacity: 0;}
+  10% {opacity: 0;}
+  20% {opacity: 0;}
+  30% {opacity: 0;}
+  40% {opacity: 0;}
+  50% {opacity: 0;}
+  60% {opacity: 0;}
+  70% {opacity: 0.1;}
+  80% {opacity: 0.2;}
+  85% {opacity: 0.3;}
+  90% {opacity: 0.5;}
+  92% {opacity: 0.6;}
+  94% {opacity: 0.7;}
+  96% {opacity: 0.8;}
+  98% {opacity: 0.9;}
+  100% {opacity: 1;}
+
+}
+
